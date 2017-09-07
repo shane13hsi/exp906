@@ -1,9 +1,25 @@
 {
   "name": "exp906",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "dependencies": {
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "semantic-release": "^7.0.2"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shane13hsi/exp906.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^7.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
